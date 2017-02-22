@@ -34,3 +34,18 @@ Frequently used basic linux command references
   lxrun /uninstall /full
   ```
   It will ask your confirmation for your uninstallation. Just press/type `y` it will do rest to uninstall.
+  
+  
+# How to solve 'sudo: unable to resolve host user' problem in linux?
+  
+   If you are seeing 'sudo: unable to resolve host user' in your screen while using `sudo` command, it means your host name is not present in `/etc/hosts` file. Host means your machine name. Suppose your machine name is **developer** then you must see **sudo: unable to resolve host developer**. You can check your host name in **/etc/hostname** file. To check your host name type following command and you must see **developer** as host name.
+   
+   ```
+   cat /etc/hostname
+   ```
+ In case you are unable to see your host name because of permission use **sudo** before cat command like following:
+ 
+ ```
+ sudo cat /etc/hostname
+ ```
+ 
