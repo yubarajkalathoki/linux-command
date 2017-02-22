@@ -21,7 +21,7 @@ Frequently used basic linux command references
   ```
  This process will also ask you to confirm your choice and enter a username and password for the user account in the Bash environment. 
  
- *To skip above process, you can run the following command instead. This command will automatically agree to the prompts, setting the “root” account as the default user account without a password. This is helpful if you want to automate the process of installing Bash in a script.*
+ *To skip above process, you can run the following command instead. This command will automatically agree to the prompts, setting the “root” account as the default user account without a password. This is helpful if you want to automate the process of installing Bash in a script. In this process you don't need to set username and password during installation and also wont ask your root password if you use sudo command.*
  
  ```
  lxrun /install /y
