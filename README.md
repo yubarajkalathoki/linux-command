@@ -38,7 +38,7 @@ Frequently used basic linux command references
   
 # How to solve 'sudo: unable to resolve host user' problem in linux?
   
-   If you are seeing 'sudo: unable to resolve host user' in your screen while using `sudo` command, it means your host name is not present in `/etc/hosts` file. Host means your machine name. Suppose your machine name is **developer** then you must see **sudo: unable to resolve host developer**. You can check your host name in **/etc/hostname** file. To check your host name type following command and you must see **developer** as host name.
+   If you are seeing **sudo: unable to resolve host user** in your screen while using `sudo` command, it means your host name is not present in `/etc/hosts` file. Host means your machine name. Suppose your machine name is **developer** then you must see **sudo: unable to resolve host developer** in your screen while using sudo command. You can check your host name in **/etc/hostname** file. To check your host name type following command and you must see **developer** as host name.
    
    ```
    cat /etc/hostname
@@ -49,3 +49,36 @@ Frequently used basic linux command references
  sudo cat /etc/hostname
  ```
  
+Now add your host name in **/etc/hosts** file. To add you must edit your **/etc/hosts** file. Type following command which will open vim editor. Here is the steps to add your host name in **/etc/hosts** file.
+
+1. Open terminal and type following command that will open vim editor 
+
+```
+sudo vi /etc/hosts
+```
+
+2. To edit this file you need to press *INSERT* command that is `I`. Just press `I`. Now you can edit this file.
+
+3. Map your host name *developer* with ip address *127.0.0.1* like following.
+
+```
+127.0.0.1 developer
+```
+
+4. Press **ESC** key to skip editor and type following to write your changes in that file.
+
+```
+:w
+```
+
+Above command make changes your file.
+
+5. Again type following to exit vim editor.
+
+```
+:q
+```
+
+You can verify whether your host name **developer** is maped with ip **127.0.0.1** or not. You can verify this with `cat /etc/hosts ` command. 
+
+Now when you type any command follwoed by `sudo` command it will not display **sudo: unable to resolve host user**.
