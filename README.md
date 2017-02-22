@@ -11,10 +11,10 @@ Frequently used basic linux command references
   
   Now you have two option to install ubuntu bash.
   
-  ###### Option 1:
+  **Option 1:**
   Press windows key and search `bash`. Press enter key selecting displayed bash command. The command will ask you to confirm your choice and enter a username and password for the user account in the Bash environment. 
   
-  ##### Option 2:
+  **Option 2:**
   Open windows command prompt and type 
   ```
   lxrun /install
