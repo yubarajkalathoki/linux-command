@@ -51,21 +51,29 @@ Frequently used basic linux command references
  
 Now add your host name in **/etc/hosts** file. To add, you must edit your **/etc/hosts** file. Here is the steps to add your host name in **/etc/hosts** file.
 
-1. Open terminal and type following command that will open vim editor 
+**Step 1:**
+
+Open terminal and type following command that will open vim editor 
 
 ```
 sudo vi /etc/hosts
 ```
 
-2. To edit this file you need to press *INSERT* command that is `I`. Just press `I`. Now you can edit this file.
+**Step 2:**
 
-3. Map your host name *developer* with ip address *127.0.0.1* like following.
+To edit this file you need to press *INSERT* command that is `I`. Just press `I`. Now you can edit this file.
+
+**Step 3**
+
+Map your host name *developer* with ip address *127.0.0.1* like following.
 
 ```
 127.0.0.1 developer
 ```
 
-4. Press **ESC** key to skip editor and type following to write your changes in that file.
+**Step 4**
+
+Press **ESC** key to skip editor and type following to write your changes in that file.
 
 ```
 :w
@@ -73,7 +81,9 @@ sudo vi /etc/hosts
 
 Above command make changes your file.
 
-5. Again type following to exit vim editor.
+**Step 5**
+
+ Again type following to exit vim editor.
 
 ```
 :q
