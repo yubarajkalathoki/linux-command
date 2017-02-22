@@ -49,7 +49,7 @@ Frequently used basic linux command references
  sudo cat /etc/hostname
  ```
  
-Now add your host name in **/etc/hosts** file. To add you must edit your **/etc/hosts** file. Type following command which will open vim editor. Here is the steps to add your host name in **/etc/hosts** file.
+Now add your host name in **/etc/hosts** file. To add, you must edit your **/etc/hosts** file. Here is the steps to add your host name in **/etc/hosts** file.
 
 1. Open terminal and type following command that will open vim editor 
 
