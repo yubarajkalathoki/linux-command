@@ -89,6 +89,6 @@ Above command make changes your file.
 :q
 ```
 
-You can verify whether your host name **developer** is maped with ip **127.0.0.1** or not. You can verify this with `cat /etc/hosts ` command. 
+You can verify whether your host name **developer** is maped with ip **127.0.0.1** or not. To verify use `cat /etc/hosts ` command. 
 
-Now when you type any command follwoed by `sudo` command it will not display **sudo: unable to resolve host user**.
+When you type any command follwoed by `sudo` it will not display **sudo: unable to resolve host user**.
